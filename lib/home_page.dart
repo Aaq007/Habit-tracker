@@ -15,8 +15,9 @@ class _HomePageState extends State<HomePage> {
         title: const Text('Habit tracker'),
         centerTitle: true,
       ),
-      body: const Center(
-        child: Text('Habit tracker'),
+      body: Center(
+        child:
+            ElevatedButton(onPressed: () {}, child: const Text('Press here')),
       ),
     );
   }
