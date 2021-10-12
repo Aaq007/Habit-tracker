@@ -16,9 +16,38 @@ class _HomePageState extends State<HomePage> {
         centerTitle: true,
       ),
       body: Center(
-        child:
-            ElevatedButton(onPressed: () {}, child: const Text('Press here')),
+        child: ListView(
+          children: items,
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: const Icon(Icons.add),
       ),
     );
   }
 }
+
+List<Card> items = [
+  Card(
+    child: ListTile(
+      title: const Text('Task'),
+      onTap: () {},
+    ),
+  ),
+  Card(
+    child: ListTile(
+      title: Text('Task'),
+    ),
+  ),
+  Card(
+    child: ListTile(
+      title: Text('Task'),
+    ),
+  ),
+  Card(
+    child: ListTile(
+      title: Text('Task'),
+    ),
+  ),
+];
