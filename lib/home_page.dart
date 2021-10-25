@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'models/task_items.dart';
+
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -27,27 +29,3 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-
-List<Card> items = [
-  Card(
-    child: ListTile(
-      title: const Text('Task'),
-      onTap: () {},
-    ),
-  ),
-  Card(
-    child: ListTile(
-      title: Text('Task'),
-    ),
-  ),
-  Card(
-    child: ListTile(
-      title: Text('Task'),
-    ),
-  ),
-  Card(
-    child: ListTile(
-      title: Text('Task'),
-    ),
-  ),
-];
