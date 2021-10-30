@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:habit_tracker/services/habit_service.dart';
 
 import 'models/task_items.dart';
 
@@ -23,7 +24,9 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          getHabits();
+        },
         child: const Icon(Icons.add),
       ),
     );
