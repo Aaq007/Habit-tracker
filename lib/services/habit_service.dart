@@ -7,6 +7,6 @@ void getHabits() async {
   var url = Uri.parse('https://reqres.in/api/users?page=2');
   var response = await http.get(url);
   var decoded = jsonDecode(response.body);
-  print(decoded['data'].length);
+  print(decoded['data']);
   // print(response.body);
 }
